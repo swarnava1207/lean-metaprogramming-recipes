@@ -17,9 +17,9 @@ jobs:
         uses: leanprover/lean-action@v1
         with:
           # This builds the library and the executable target
-          build-args: metaprogramming-recipes
+          build-args: lean-cookbook
 
       - name: Verify Docs Generation (EXE)
         run: |
           # This catches the "INTERNAL PANIC" that build might miss
-          lake exe metaprogramming-recipes
+          lake exe lean-cookbook

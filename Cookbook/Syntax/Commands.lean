@@ -1,10 +1,10 @@
 import VersoManual
-import MetaprogrammingRecipes.Lean
+import Cookbook.Lean
 
 open Verso.Genre Manual
 open Verso.Genre.Manual.InlineLean
 
-open MetaprogrammingRecipes
+open Cookbook
 
 set_option pp.rawOnError true
 

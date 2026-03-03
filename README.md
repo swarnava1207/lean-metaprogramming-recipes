@@ -1,6 +1,8 @@
 # (Meta)programming in Lean4 Cookbook
 
-A cookbook for (Meta)programming in Lean4 containing recipes(code recipes) to help you code. Visit the [website](https://leanprover-cookbook.github.io/lean-metaprogramming-recipes) to read the cookbook. This cookbook contains recipes for both programming and metaprogramming in Lean4.
+A cookbook containing recipes(code snippets) for both programming and metaprogramming in Lean4. Visit the [website](https://leanprover-cookbook.github.io/lean-metaprogramming-recipes) to read the cookbook.
+
+This repository does not contain any recipes for proving in mathematics, it is only focused on (meta)programming in Lean4.
 
 > [!Important]
 > This repository is under development and we are working hard to add more recipes to it.

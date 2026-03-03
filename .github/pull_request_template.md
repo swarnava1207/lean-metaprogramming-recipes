@@ -5,7 +5,7 @@
 
 ## Checklist
 
-- [ ] My code builds locally with `lake build metaprogramming-recipes && lake exe metaprogramming-recipes`.
+- [ ] My code builds locally with `lake build lean-cookbook && lake exe lean-cookbook`.
 - [ ] I have followed the methodology of cooking my recipe using [COOKBOOK_GUIDELINES.md](COOKBOOK_GUIDELINES.md).
 - [ ] I have added appropriate indexing for the recipe(if new reciple)
 

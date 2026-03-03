@@ -1,16 +1,16 @@
 import VersoManual
-import MetaprogrammingRecipes.Lean
+import Cookbook.Lean
 
 -- Chapter Aggregator (for imports)
-import MetaprogrammingRecipes.Chapters
-import MetaprogrammingRecipes.Index
-import MetaprogrammingRecipes.Example
+import Cookbook.Chapters
+import Cookbook.Index
+import Cookbook.Example
 
 open Verso.Genre Manual
 open Verso.Genre.Manual.InlineLean
 
 
-open MetaprogrammingRecipes
+open Cookbook
 
 set_option pp.rawOnError true
 
@@ -33,10 +33,10 @@ We hope that this resource will be helpful for both beginners
 and experienced programmers looking to deepen their understanding of
 Lean 4.
 
-{include 1 MetaprogrammingRecipes.Expressions}
+{include 1 Cookbook.Expressions}
 
-{include 1 MetaprogrammingRecipes.Syntax}
+{include 1 Cookbook.Syntax}
 
-{include 1 MetaprogrammingRecipes.Example}
+{include 1 Cookbook.Example}
 
-{include 1 MetaprogrammingRecipes.Index}
+{include 1 Cookbook.Index}

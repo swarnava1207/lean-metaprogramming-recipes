@@ -6,14 +6,14 @@ Author: David Thrane Christiansen
 
 import Std.Data.HashMap
 import VersoManual
-import MetaprogrammingRecipes
+import Cookbook
 
 open Verso Doc
 open Verso.Genre Manual
 
 open Std (HashMap)
 
-open MetaprogrammingRecipes
+open Cookbook
 
 
 -- Computes the path of this very `main`, to ensure that examples get names relative to it
@@ -86,4 +86,4 @@ def config : RenderConfig where
   emitHtmlMulti := .immediately
   htmlDepth := 2
 
-def main := manualMain (%doc MetaprogrammingRecipes) (extraSteps := [buildExercises]) (config := config)
+def main := manualMain (%doc Cookbook) (extraSteps := [buildExercises]) (config := config)

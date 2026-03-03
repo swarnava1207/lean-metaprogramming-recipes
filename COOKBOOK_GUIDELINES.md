@@ -8,10 +8,10 @@ Since we contain both programming and metaprogramming recipes, we name the repos
 
 The cookbook is organized into a hierarchy of chapters and recipes:
 
-- **Main Entry**: `MetaprogrammingRecipes.lean` is the front page.
-- **Chapter Aggregator**: `MetaprogrammingRecipes/Chapters.lean` manages the list of all chapters and the index.
-- **Chapter Parent Files**: Located in `MetaprogrammingRecipes/` (e.g., `Syntax.lean`, `Expressions.lean`). These define the chapter title and include individual recipes.
-- **Recipes**: Individual Lean files located in subdirectories (e.g., `MetaprogrammingRecipes/Syntax/Commands.lean`).
+- **Main Entry**: `Cookbook.lean` is the front page.
+- **Chapter Aggregator**: `Cookbook/Chapters.lean` manages the list of all chapters and the index.
+- **Chapter Parent Files**: Located in `Cookbook/` (e.g., `Syntax.lean`, `Expressions.lean`). These define the chapter title and include individual recipes.
+- **Recipes**: Individual Lean files located in subdirectories (e.g., `Cookbook/Syntax/Commands.lean`).
 
 ## Writing a New Recipe
 
@@ -19,19 +19,19 @@ Writing a new recipe is straightforward. Follow these steps to ensure your contr
 
 1. **Consult**: Make sure what you are writing is not already covered. Please consult in discussions before starting.
 
-2. **Create a New File**: Add a `.lean` file in the appropriate subdirectory: `MetaprogrammingRecipes/{CHAPTER_NAME}/{RecipeName}.lean`.
+2. **Create a New File**: Add a `.lean` file in the appropriate subdirectory: `Cookbook/{CHAPTER_NAME}/{RecipeName}.lean`.
 
 3. **Import Common Modules**: Start your file with the below imports:
 
 ```lean
 import VersoManual
-import MetaprogrammingRecipes.Lean
+import Cookbook.Lean
 
 open Verso.Genre Manual
 open Verso.Genre.Manual.InlineLean
 
 open Lean Elab Meta Tactic Command
-open MetaprogrammingRecipes
+open Cookbook
 
 set_option pp.rawOnError true
 ```
@@ -41,11 +41,11 @@ set_option pp.rawOnError true
 5. **Use Sections**: Use `#` for top-level headers within your recipe and `##` for sub-sections.
 
 6. **Link to Chapter**:
-   - Open the chapter's parent file (e.g., `MetaprogrammingRecipes/{CHAPTER_NAME}.lean`).
-   - Add `import MetaprogrammingRecipes.{CHAPTER_NAME}.{RecipeName}` at the top.
-   - Include it using `{include 1 MetaprogrammingRecipes.{CHAPTER_NAME}.{RecipeName}}`.
+   - Open the chapter's parent file (e.g., `Cookbook/{CHAPTER_NAME}.lean`).
+   - Add `import Cookbook.{CHAPTER_NAME}.{RecipeName}` at the top.
+   - Include it using `{include 1 Cookbook.{CHAPTER_NAME}.{RecipeName}}`.
 
-Please go through the [Example.lean](./MetaprogrammingRecipes/Example.lean) recipe for a template to follow.
+Please go through the [Example.lean](./Cookbook/Example.lean) recipe for a template to follow.
 
 ## Best Practices
 
@@ -56,8 +56,8 @@ Please go through the [Example.lean](./MetaprogrammingRecipes/Example.lean) reci
 - **Run Locally**: Always build your changes locally:
 
 ```bash
-lake build metaprogramming-recipes
-lake exe metaprogramming-recipes
+lake build lean-cookbook
+lake exe lean-cookbook
 ```
 
 - No AI Slop. Please write the content yourself. Since this is meant for you to write code easily, the more AI Slop there is with complicated jargon and less precise explanations, the less useful it will be. If you need help, ask in discussions or reach out on discusssions.
