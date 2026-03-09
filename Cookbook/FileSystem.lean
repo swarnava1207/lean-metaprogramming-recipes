@@ -8,6 +8,11 @@ import Cookbook.FileSystem.creatingDirectories
 open Verso.Genre Manual
 
 #doc (Manual) "File System" =>
+
+%%%
+tag := "file-system"
+number := false
+%%%
 {include 1 Cookbook.FileSystem.readingFromFile}
 {include 1 Cookbook.FileSystem.writingToFile}
 {include 1 Cookbook.FileSystem.appendingToFile}
