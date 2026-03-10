@@ -10,12 +10,14 @@ import Cookbook.Expressions.replacingCodeUsingTryThis
 
 open Verso.Genre Manual
 
-#doc (Manual) "Expressions" =>
+#doc (Manual) "Working with Expressions" =>
 
 %%%
 tag := "expressions"
 number := false
 %%%
+
+In this chapter we collect recipes to manipulate expressions including building and pattern-matching.
 
 {include 1 Cookbook.Expressions.kindsofExpressions}
 {include 1 Cookbook.Expressions.displayingExpressionsInInfoView}

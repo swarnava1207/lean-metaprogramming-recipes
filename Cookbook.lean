@@ -9,6 +9,7 @@ import Cookbook.maintainingState
 import Cookbook.Tactics
 import Cookbook.Index
 import Cookbook.buildingRecipe
+import Cookbook.Elaboration
 
 open Verso.Genre Manual
 open Verso.Genre.Manual.InlineLean
@@ -50,6 +51,8 @@ Lean 4.
 {include 1 Cookbook.Syntax}
 
 {include 1 Cookbook.Expressions}
+
+{include 1 Cookbook.Elaboration}
 
 {include 1 Cookbook.Tactics}
 
