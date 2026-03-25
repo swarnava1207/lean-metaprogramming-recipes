@@ -66,5 +66,5 @@ catch e =>
 Notice that {lean}`String` (like `"testdir/subdir"`) works even though the
 functions expect a {name}`System.FilePath`. This is because Lean has a
 *coercion* (an instance of {lean}`Coe String System.FilePath`) that
-automatically converts string literals into file path objects when needed.
+automatically converts string literals into file path objects when needed. See more info on [Coercions here](https://lean-lang.org/doc/reference/latest/Coercions/#coercions).
  

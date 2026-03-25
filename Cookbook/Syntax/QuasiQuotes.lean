@@ -12,6 +12,7 @@ set_option pp.rawOnError true
 %%%
 tag := "quasi-quotes"
 number := false
+htmlSplit := .never
 %%%
 
 ::: contributors
