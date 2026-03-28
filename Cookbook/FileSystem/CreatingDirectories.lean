@@ -60,11 +60,11 @@ catch e =>
     IO.println s!"Failed to create directory '{path}': {e}"
 
 -- Useful Tip: String value also works here
-#eval createSubDirAll "testDir/subDir"
+-- #eval createSubDirAll "testDir/subDir"
 ```
 
 Notice that {lean}`String` (like `"testdir/subdir"`) works even though the
 functions expect a {name}`System.FilePath`. This is because Lean has a
 *coercion* (an instance of {lean}`Coe String System.FilePath`) that
-automatically converts string literals into file path objects when needed.
+automatically converts string literals into file path objects when needed. See more info on [Coercions here](https://lean-lang.org/doc/reference/latest/Coercions/#coercions).
  
