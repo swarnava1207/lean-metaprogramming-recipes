@@ -22,9 +22,12 @@ number := false
 ::: contributors
 :::
 
+
 This chapter covers most FileSystem operations, such as reading and writing files, creating directories, listing directory contents, etc. We mainly use the {name}`System.FilePath` type and the `IO.FS` module from the Lean standard library.
 
 This chapter also adds recipes for other important file formats, such as JSONL, which are commonly used.
+
+It will be useful to go through the {ref "io"}[I/O and Processes] chapter first, as it covers the basics of working with `IO`.
 
 {include 1 Cookbook.FileSystem.ReadingFromFile}
 {include 1 Cookbook.FileSystem.WritingToFile}
